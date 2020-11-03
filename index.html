@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/reset.css">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet"media="screen and (min-width: 901px)" href="CSS/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/mobile.css">
     <title>HOME</title>
 </head>
 <body>
@@ -15,6 +16,8 @@
       <div class="header">
         <!--Name of site...................................................................................................................-->
         <p id="logo">PDC</p>
+        <img class="menu-icon" src="resources/SVG/menu-icon.svg">
+        <img class="close-icon" src="resources/SVG/close-icon.svg">
         <!--Navigation bar of site.........................................................................................................-->
         <nav>
             <a href="#">HOME</a>
@@ -23,8 +26,10 @@
             <a href="#">BLOGS</a>
             <a href="#">CONTACT US</a>
             <div class="search-box">
+                <!-- <div class="bar"> -->
                 <input class="search" type="text" name="searchbox" placeholder="Address, contact, Test Available, Prices And Any Thing.">
-                <a class="search-btn-link" href="#"><img class="search-btn" src="/resources/SVG/search-icon.svg"></a>
+                <a class="search-btn-link" href="#"><img class="search-btn" src="resources/SVG/search-icon.svg"></a>
+                <!-- </div> -->
             </div>
         </nav>
       </div>
@@ -44,7 +49,7 @@
                 <br>
                 We provide Full body checkup, for more information <a href="#">click here.</a>
             </p>
-            <img src="/resources/SVG/home-1.svg">
+            <img src="resources/SVG/home-1.svg">
             </div>
         </section>
         <!--Second section of site..........................................................................................................-->

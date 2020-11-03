@@ -80,3 +80,11 @@ a:hover {
 .search-btn:hover {
     background-color: #A0A0A0;
 }
+
+.menu-icon {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}

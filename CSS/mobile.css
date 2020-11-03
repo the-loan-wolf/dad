@@ -13,10 +13,11 @@ body {
 #logo {
     display: inline-block;
     font-family: 'Anton', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #EFEFEF;
     position: relative;
-    left: 5px;
+    top: 8px;
+    left: 8px;
 }
 
 /*Navigation Bar.......................................................................................................................*/
@@ -41,13 +42,17 @@ nav > a {
     display: block;
     text-align: center;
     color: #EFEFEF;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px;
     position: relative;
 }
 
 a:hover {
     color: #C4C4C4;
+}
+
+.close-icon {
+    width: 3.5rem;
 }
 
 /*search box...........................................................................................................................*/
@@ -88,6 +93,10 @@ margin: 0 auto;
     background-color: #EFEFEF;
     border-style: none;
     color: #4E4E4E;
+}
+
+.search-btn:hover {
+    background-color: #A0A0A0;
 }
 
 /*changing position of search box according to diffrent screen sizes (hardcoding).......................................................*/

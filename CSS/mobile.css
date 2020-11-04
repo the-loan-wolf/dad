@@ -6,6 +6,7 @@ body {
 
 .header {
     background-color: #7085F5;
+    min-height: 9vh;
 }
 
 /*Site logo...........................................................................................................................*/
@@ -23,16 +24,23 @@ body {
 /*Navigation Bar.......................................................................................................................*/
 
 .menu-icon {
-    display: none;
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 8px;
+    width: 2.5rem;
 }
 
 .close-icon {
+    display: none;
     float: right;
     position: relative;
+    width: 3.5rem;
     
 }
 
 nav {
+    display: none;
     clear: right;
     font-family: 'Roboto Condensed', sans-serif;
     color: #EFEFEF;
@@ -51,9 +59,6 @@ a:hover {
     color: #C4C4C4;
 }
 
-.close-icon {
-    width: 3.5rem;
-}
 
 /*search box...........................................................................................................................*/
 

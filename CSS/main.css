@@ -116,6 +116,7 @@ a:hover {
 
 .SVG-1 {
     width: 27%;
+    height: 40%;
     float: right;
     position: relative;
     top: -30px;
@@ -220,4 +221,62 @@ p > a {
     .SVG-1 {
         top: 10%;
     }
+}
+
+/*section 2 start from here ...........................................................................................................*/
+
+/*Heading of section 2*/
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 5%;
+}
+
+.section-2 > div {
+    display: inline-block;
+    background-color: #7085F5;
+    width: 28%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #2C2C2C;    
+}
+
+.box-1 {
+    left: 5vw;
+}
+
+
+.box-2 {
+    left: 7.5vw;
+}
+
+
+.box-3 {
+    right: -10vw;
+}
+
+h3 {
+    font-size: 1.8rem;
+    position: relative;
+    top: 2.7rem;
+}
+
+.blog-image {
+    width: 70%;
+    height: 30%;
+    background-color: #BCBCBC;
+    position: relative;
+    top: 3rem;
+    margin: auto;
+}
+
+.box > p {
+    display: block;
+    position: relative;
+    top: 4rem;
+    font-size: 1.4rem;
 }

@@ -23,12 +23,15 @@ let innerHeight = window.innerHeight;
 let headerHeight = document.querySelector('.header').offsetHeight;
 let imageHeight = innerHeight - headerHeight;
 document.querySelector('.section-1').style.height = imageHeight + 'px';
+document.querySelector('.section-2').style.height = innerHeight + 'px';
+
 
 function windowResize() {
 let innerHeight = window.innerHeight;
 let headerHeight = document.querySelector('.header').offsetHeight;
 let imageHeight = innerHeight - headerHeight;
 document.querySelector('.section-1').style.height = imageHeight + 'px';
+document.querySelector('.section-2').style.height = innerHeight + 'px';
 }
 
 

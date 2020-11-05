@@ -93,7 +93,7 @@ a:hover {
 /*site page body CSS start from here(section 1).........................................................................................*/
 
 .section-1 {
-    background-image: url(resources/Images/pexels-polina-tankilevitch-3735780.jpg);
+    background-image: url(/resources/Images/pexels-polina-tankilevitch-3735780.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;

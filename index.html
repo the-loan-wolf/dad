@@ -8,7 +8,7 @@
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/mobile.css">
     <title>HOME</title>
 </head>
-<body>
+<body onresize="windowResize()">
 
     <!--Header section of site.........................................................................................................-->
 
@@ -41,16 +41,18 @@
 
         <!--First section of Site.........................................................................................................-->
         <section>
-            <div>
+            <div class="section-1">
             <!--Title of first section.........................................................................................................-->
-            <h1>Pathology Lab And Diagnostic Center</h1>
-            <p>
-                PDC is a pathology/diagnostic lab which you can trust upon for accurate medical report. 
-                <br>
-                We provide Full body checkup, for more information <a href="#">click here.</a>
-            </p>
-            <img src="resources/SVG/home-1.svg">
+                
+                <div class="frosted-glass-back">
+                    <h1>Pathology Lab And Diagnostic Center</h1>
+                    <p class="para">
+                        PDC is a pathology/diagnostic lab which you can trust <br class="break">upon for accurate <br class="break-1">medical report.<br>We provide Full body checkup, for more information <br class="break-2"><a href="#">click here.</a>
+                    </p>
+                    <img class="SVG-1" src="resources/SVG/home-1.svg">
+                </div>
             </div>
+            <div class="gredient"></div>
         </section>
         <!--Second section of site..........................................................................................................-->
         <section>

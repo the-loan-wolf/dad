@@ -2,11 +2,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #EFEFEF;
 }
 
 .header {
     background-color: #7085F5;
-    min-height: 9vh;
+    min-height: 3rem;
 }
 
 /*Site logo...........................................................................................................................*/
@@ -17,7 +18,7 @@ body {
     font-size: 2.5rem;
     color: #EFEFEF;
     position: relative;
-    top: 8px;
+    top: 5px;
     left: 8px;
 }
 
@@ -148,13 +149,36 @@ margin: 0 auto;
 
 /*site page body CSS start from here...................................................................................................*/
 
-.section-1 {
-    background-image: url(/dad/homeimage.jpg);
-    background-repeat: no-repeat;
-    /* background-position: center;  */
+
+h1 {
+    text-align: center;
     position: relative;
-    background-size: 100%;
-    background-attachment: fixed;
-    z-index: 2;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.para {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.SVG-1 {
+    position: relative;
+    top: 5rem;
+    display: block;
+    margin: auto;
     
+}
+
+p > a {
+    color: #7085F5;
+}
+
+/*hidding <br> tag which we used in desktop version which is unnecessery now............................................................*/
+
+.break, .break-1, .break-2 {
+    display: none;
 }

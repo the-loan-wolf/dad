@@ -17,7 +17,7 @@ document.querySelector(".close-icon").onclick = function() {
 
 } 
 
-//calculating available height to apply on background image
+//calculating available height to apply on section 1 and 2..............................................................................
 
 let innerHeight = window.innerHeight;
 let headerHeight = document.querySelector('.header').offsetHeight;
@@ -26,12 +26,32 @@ document.querySelector('.section-1').style.height = imageHeight + 'px';
 document.querySelector('.section-2').style.height = innerHeight + 'px';
 
 
-function windowResize() {
-let innerHeight = window.innerHeight;
-let headerHeight = document.querySelector('.header').offsetHeight;
-let imageHeight = innerHeight - headerHeight;
-document.querySelector('.section-1').style.height = imageHeight + 'px';
-document.querySelector('.section-2').style.height = innerHeight + 'px';
-}
+let check;
+ if (/Mobile/i.test(navigator.userAgent)) {
+     check = true;
+     let outerHeight = window.outerHeight;
+     document.querySelector('.section-2').style.height = outerHeight + 'px';
+ }
+
+ if (!(check)) {
+    function windowResize() {
+        let innerHeight = window.innerHeight;
+        let headerHeight = document.querySelector('.header').offsetHeight;
+        let imageHeight = innerHeight - headerHeight;
+        document.querySelector('.section-1').style.height = imageHeight + 'px';
+        document.querySelector('.section-2').style.height = innerHeight + 'px';
+    }
+ }
+
+//unused code...........................................................................................................................
+// let check;
+// if (/Mobile/i.test(navigator.userAgent)) {
+//     check = false;
+// }
+
+// millisecondsToWait = 10000; 
+// setTimeout(function() { 
+
+// }, millisecondsToWait); 
 
 

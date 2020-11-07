@@ -26,22 +26,17 @@ document.querySelector('.section-1').style.height = imageHeight + 'px';
 document.querySelector('.section-2').style.height = innerHeight + 'px';
 
 
-let check;
- if (/Mobile/i.test(navigator.userAgent)) {
-     check = true;
-     let outerHeight = window.outerHeight;
-     document.querySelector('.section-2').style.height = outerHeight + 'px';
- }
 
- if (!(check)) {
-    function windowResize() {
-        let innerHeight = window.innerHeight;
-        let headerHeight = document.querySelector('.header').offsetHeight;
-        let imageHeight = innerHeight - headerHeight;
+function windowResize() {
+let innerHeight = window.innerHeight;
+    let headerHeight = document.querySelector('.header').offsetHeight;
+    let imageHeight = innerHeight - headerHeight;
+    if (/Mobile/i.test(navigator.userAgent) != true) {
         document.querySelector('.section-1').style.height = imageHeight + 'px';
-        document.querySelector('.section-2').style.height = innerHeight + 'px';
     }
- }
+    document.querySelector('.section-2').style.height = innerHeight + 'px';
+}
+
 
 //unused code...........................................................................................................................
 // let check;

@@ -274,7 +274,14 @@ h3 {
     margin: auto;
 }
 
-.box > p {
+.date {
+    display: block;
+    position: relative;
+    top: 4rem;
+    font-size: 1.4rem;
+}
+
+.detail {
     display: block;
     position: relative;
     top: 4rem;

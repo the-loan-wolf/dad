@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #4E4E4E;
+}
+
+.header {
+    background-color: #7085F5;
+}
+
+/*Site logo...........................................................................................................................*/
+
+#logo {
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+    font-size: 3.5rem;
+    color: #EFEFEF;
+    position: relative;
+    left: 5px;
+}
+
+/*Navigation Bar.......................................................................................................................*/
+
+nav {
+    position: relative;
+    float: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #EFEFEF;
+}
+
+nav > a {
+    color: #EFEFEF;
+    font-size: 1.5rem;
+    padding: 10px;
+    position: relative;
+    top: 5px;
+}
+
+a:hover {
+    color: #C4C4C4;
+}
+
+/*search box...........................................................................................................................*/
+
+.search-box {
+    display: inline-block;
+}
+
+.search {
+    display: inline-block;
+    width: 25vw;
+    height: 28px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-shadow: none;
+    background-color: #EFEFEF;
+    border-style: none;
+    color: #4E4E4E;
+}
+
+.search:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+}
+
+.search-btn {
+    position: relative;
+    left: -4px;
+    bottom: -11px;
+    height: 30px;
+    background-color: #EFEFEF;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.search-btn:hover {
+    background-color: #A0A0A0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet"media="screen and (min-width: 901px)" href="CSS/header.css">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="CSS/header.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/headerMobile.css">
+    <link rel="stylesheet" href="CSS/doctors.css">
     <title>Doctors</title>
 </head>
-<body>
+<body onresize="windowResize()">
     <!--Header section of site.........................................................................................................-->
 
     <header>
@@ -37,11 +38,26 @@
       <!--After Navigation Bar Content..................................................................................................-->
 
       <main>
-          <section>
-
+          <!--first section start from here.............................................................................................-->
+          <section class="section-1">
+            <h1>Meet With Our Doctors</h1>
+            <div class="stickers">
+                <img id="tube" src="resources/SVG/tube.svg">
+                <img id="heart" src="resources/SVG/heart.svg">
+                <img id="microscope" src="resources/SVG/gummy-medical-lab.svg">                
+                <img id="x-ray" src="resources/SVG/pale-doctor.png">                
+                <img id="chemistry" src="resources/SVG/gummy-experiment-lab.svg">                
+                <img id="doctor" src="resources/SVG/doctor-man.svg">
+            </div>
+            <div class="doctor-1">
+                <img class="profile-picture" src="dad/drDayanandProfilePicture.jpg" alt="dr.Dayanand Profile Picture">
+                <h2>Dr. Dayanand Prasad Singh</h2>
+                <p id="doc-para-1">Hello Everyone, thank you for visiting our site, Here we provide complete details about PDC so you people can get any details what you want with ease.</p>
+            </div>
           </section>
       </main>
 
     <script src="JS/header.js"></script>
+    <script src="JS/doctors.js"></script>
 </body>
 </html>

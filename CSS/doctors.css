@@ -1,0 +1,81 @@
+/*main heading of our page.............................................................................................................*/
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 5%;
+    font-weight: 500;
+}
+
+/*first doctor profile column..........................................................................................................*/
+
+.doctor-1 {
+    width: 50%;
+    height: 40%;
+    background-color: #7085F5;
+    font-size: 1.3rem;
+    color: #2C2C2C;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+}
+
+.profile-picture {
+    /* width: 30%; */
+    height: 80%;
+    float: left;
+    position: relative;
+    top: 10%;
+    left: 3%;
+}
+
+h2,#doc-para-1 {
+    padding: 0 15%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    
+}
+
+#doc-para-1 {
+    top: 20%;
+}
+
+/*stickers of page......................................................................................................................*/
+
+#tube, #heart, #microscope, #x-ray, #chemistry, #doctor {
+    width: 100px;
+    position: absolute;
+}
+
+#tube {
+    top: 20%;
+    left: 10%;
+}
+
+#heart {
+    top: 50%;
+    left: 2%;
+}
+
+#microscope {
+    top: 80%;
+    width: 15%;
+}
+
+#x-ray {
+    top: 20%;
+    left: 84%;
+    width: 15%;
+}
+
+#chemistry {
+    top: 65%;
+    left: 85%;
+    width: 15%;
+}
+
+#doctor {
+    top: 80%;
+    left: 45%;
+}

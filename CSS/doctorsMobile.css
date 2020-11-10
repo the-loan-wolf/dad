@@ -1,0 +1,55 @@
+/*stickers of page......................................................................................................................*/
+
+#tube, #heart, #microscope, #x-ray, #chemistry, #doctor {
+    display: none;
+}
+
+/*main heading of our page.............................................................................................................*/
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 5%;
+    font-weight: 500;
+}
+
+/*first doctor profile column..........................................................................................................*/
+
+.doctor-1 {
+    width: 80%;
+    height: 70%;
+    background-color: #7085F5;
+    font-size: 1.3rem;
+    color: #2C2C2C;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+    border-radius: 0.2rem;
+}
+
+.profile-picture {
+    width: 60%;
+    position: relative;
+    top: 1rem;
+    left: 20%;
+}
+
+h2,#doc-para-1 {
+    position: relative;
+    top: 10%;
+    /* left: 5%; */
+    text-align: center;    
+}
+
+#doc-para-1 {
+    top: 15%;
+    padding: 0 5%;
+}
+
+/*media quries to change font size depending on screen resolution......................................................................*/
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 15px;
+    }
+}

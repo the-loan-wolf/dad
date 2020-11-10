@@ -18,6 +18,7 @@ h1 {
     position: relative;
     margin: 0 auto;
     top: 20%;
+    border-radius: 0.2rem;
 }
 
 .profile-picture {

@@ -1,0 +1,72 @@
+/* section 1 css start from here....................................................................................................... */
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 2rem;
+}
+
+#section-1 > div {
+    display: block;
+    background-color: #7085F5;
+    width: 90%;
+    height: 25%;
+    position: relative;
+    top: 15%;
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #2C2C2C;
+    margin: auto;
+    margin-top: 1%;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.blog-image {
+    width: 40%;
+    height: 90%;
+    background-color: #BCBCBC;
+    float: left;
+    position: relative;
+    left: 2%;
+    top: 0.5rem;
+}
+
+.date {
+    font-size: 1rem;
+    position: relative;
+    top: 1rem;
+}
+
+.detail {
+    font-size: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+/* section 2 css start from here....................................................................................................... */
+
+.all-blogs {
+    background-color: #7085F5;
+    width: 90%;
+    height: 76%;
+    position: relative;
+    top: 15%;
+    border-radius: 0.3rem;
+    color: #2C2C2C;
+    margin: auto;
+}
+
+/*media quries to change font size depending on screen resolution......................................................................*/
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 15px;
+    }
+}

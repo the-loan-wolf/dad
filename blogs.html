@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet"media="screen and (min-width: 901px)" href="CSS/header.css">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="CSS/header.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/headerMobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="CSS/blogs.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/blogsMobile.css">
     <title>Blogs</title>
 </head>
-<body>
+<body onresize="windowResize()">
     <!--Header section of site.........................................................................................................-->
 
     <header>
@@ -37,11 +39,42 @@
       <!--After Navigation Bar Content..................................................................................................-->
 
       <main>
-          <section>
+          <!-- first section content..................................................................................................... -->
+          <section id="section-1">
+            <h1>Latest Blogs</h1>
+            <!--First box out of 3...........................................................................................................-->
+            <div class="box-1 box">
+                <h2>Title</h2>
+                <div class="blog-image"></div>
+                <p class="date">Date</p>
+                <p class="detail">Some details</p>
+            </div>
+            <!--Second box out of 3........................................................................................................-->
+            <div class="box-2 box">
+                <h2>Title</h2>
+                <div class="blog-image"></div>
+                <p class="date">Date</p>
+                <p class="detail">Some details</p>
+            </div>
+            <!--Last box...................................................................................................................-->
+            <div class="box-3 box">
+                <h2>Title</h2>
+                <div class="blog-image"></div>
+                <p class="date">Date</p>
+                <p class="detail">Some details</p>
+            </div>
+          </section>
 
+          <!--second section content...................................................................................................-->
+          <section id="section-2">
+              <h1 class="section-2-heading">All Blogs</h1>
+            <div class="all-blogs">
+
+            </div>
           </section>
       </main>
 
     <script src="JS/header.js"></script>
+    <script src="JS/blogs.js"></script>
 </body>
 </html>

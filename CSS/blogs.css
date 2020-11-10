@@ -1,0 +1,95 @@
+/* section 1 css start from here....................................................................................................... */
+
+/* section-1 tag css...............................................*/
+#section-1 {
+    position: relative;
+}
+/* main heading of section 1.......................................*/
+h1 {
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 3%;
+}
+
+/* section 1 boxes css.............................................*/
+#section-1 > div {
+    display: inline-block;
+    background-color: #7085F5;
+    width: 30%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #2C2C2C;    
+}
+
+/* box 1 css.......................................................*/
+.box-1 {
+    left: 3%;
+}
+
+/* box 2 css.......................................................*/
+.box-2 {
+    left: 4.75%;
+}
+
+/* box 3 css.......................................................*/
+.box-3 {
+    left: 6.5%;
+}
+
+/* heading of boxes................................................*/
+h2 {
+    font-size: 1.8rem;
+    position: relative;
+    top: 2.7rem;
+}
+
+/* boxes image css.................................................*/
+.blog-image {
+    width: 70%;
+    height: 30%;
+    background-color: #BCBCBC;
+    position: relative;
+    top: 3rem;
+    margin: auto;
+}
+
+/* boxes date css..................................................*/
+.date {
+    display: block;
+    position: relative;
+    top: 4rem;
+    font-size: 1.4rem;
+}
+
+/* boxes detail css................................................*/
+.detail {
+    display: block;
+    position: relative;
+    top: 4rem;
+    font-size: 1.4rem;
+}
+
+/* section 2 css start from here....................................................................................................... */
+
+/* section-2 tag css...............................................*/
+#section-2 {
+    position: relative;
+}
+.section-2-heading {
+    position: absolute;
+}
+
+.all-blogs {
+    width: 94%;
+    height: 70%;
+    background-color: #7085F5;
+    position: relative;
+    top: 15%;
+    left: 3%;
+    border-radius: 0.5rem;
+    color: #2C2C2C;
+}

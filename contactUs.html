@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet"media="screen and (min-width: 901px)" href="CSS/header.css">
+    <link rel="stylesheet"media=" screen and (min-width: 901px)" href="CSS/header.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/headerMobile.css">
+    <link rel="stylesheet"media=" screen and (min-width: 901px)" href="CSS/contact.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/contactMobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>Contact Us</title>
 </head>
-<body>
+<body onresize="windowResize()">
     <!--Header section of site.........................................................................................................-->
 
     <header>
@@ -37,11 +41,20 @@
       <!--After Navigation Bar Content..................................................................................................-->
 
       <main>
-          <section>
+          <!-- first section content...................................................................................................-->
+          <section id="section-1">
+            <h1>Address</h1>
+            <address>Rajender Nagar road no.1, landmark: Electricity Office</address>
+            <div id="map"></div>
+          </section>
 
+          <!-- second section content..................................................................................................-->
+          <section id="section-2">
+            
           </section>
       </main>
 
     <script src="JS/header.js"></script>
+    <script src="JS/contact.js"></script>
 </body>
 </html>

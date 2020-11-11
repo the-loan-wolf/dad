@@ -1,3 +1,7 @@
+body {
+    background-color: #EFEFEF;
+}
+
 /*stickers of page......................................................................................................................*/
 
 #tube, #heart, #microscope, #x-ray, #chemistry, #doctor {
@@ -48,8 +52,8 @@ h2,#doc-para-1 {
 
 /*media quries to change font size depending on screen resolution......................................................................*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     html {
-        font-size: 15px;
+        font-size: 13px;
     }
 }

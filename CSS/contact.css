@@ -27,6 +27,7 @@ address {
     top: 1.8rem;
     left: 3%;
     border: 0.2rem solid #7085F5;
+    
 }
 
 /* section 2 css start from here...................................................................................................... */
@@ -90,6 +91,10 @@ label {
 
 #name,#email:focus {
     background-color: #7085F5;
+}
+
+#bottom {
+    display: none;
 }
 
 /*media quries to change font size depending on screen resolution......................................................................*/

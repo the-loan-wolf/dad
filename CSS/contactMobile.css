@@ -20,6 +20,7 @@ address {
     height: 75%;
     position: relative;
     top: 1.8rem;
+    z-index: 4;
 }
 
 /* section 2 css start from here...................................................................................................... */
@@ -78,6 +79,23 @@ label {
 
 #name,#email:focus {
     background-color: #7085F5;
+}
+
+
+#bottom {
+    background: url(/resources/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7085F5;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 5;
+    box-shadow: 0 0 6px 6px rgba(0,0,0,0.19), 0 0 3px 3px rgba(0,0,0,0.23);
 }
 
 /*media quries to change font size depending on screen resolution......................................................................*/

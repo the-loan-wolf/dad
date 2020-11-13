@@ -1,11 +1,12 @@
 /* section 1 css start from here...................................................................................................... */
 #section-1 {
-    display: inline-block;
+    /* display: inline-block; */
     width: 50%;
     float: left;
 }
 
-h1 {
+.section-1-heading {
+    display: inline;
     font-size: 2rem;
     position: relative;
     top: 1rem;
@@ -32,6 +33,63 @@ address {
 #section-2 {
     display: inline-block;
     width: 50%;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}
+
+.contact-para {
+    padding: 0 25%;
+    font-size: 1.2rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+form {
+    display: block;
+    position: relative;
+    top: 3rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding-top: 2%;
+}
+
+#name, #email, textarea {
+    outline: none;
+    background-color: #7085F5;
+    border-style: none;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 2% 1%;
+}
+
+#name, #email {
+    height: 2rem;
+}
+
+#submit {
+    color: #EFEFEF;
+    background-color: #7085F5;
+    border-style: none;
+    width: 50%;
+    height: 2rem;
+    margin-top: 2%;
+}
+
+#name::placeholder, #email::placeholder {
+    color: #2C2C2C;
+}
+
+#name,#email:focus {
+    background-color: #7085F5;
 }
 
 /*media quries to change font size depending on screen resolution......................................................................*/

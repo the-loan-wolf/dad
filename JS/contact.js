@@ -21,3 +21,39 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([25.6082129, 85.1566429]).addTo(map)
 .bindPopup('PDC')
 .openPopup();
+
+// mail..................................................................................................................................
+
+
+
+(function(){
+    emailjs.init("user_Zlj4X0CYY9s8R3IoUHwAD");
+ })();
+
+ let nameOfSender = document.querySelector('#name').value;
+ let addressOfSender = document.querySelector('#email').value;
+ let messageOfSender = document.getElementsByTagName('#message').value;
+ 
+function sendEmail() { 
+    let nameOfSender = document.querySelector('#name').value;
+    let addressOfSender = document.querySelector('#email').value;
+    let messageOfSender = document.getElementsByTagName('#message').value;
+
+    var templateParams = {
+        from_name: nameOfSender,
+        name: nameOfSender,
+        email: addressOfSender,
+        message: messageOfSender
+    };
+
+    emailjs.send('service_1nzml0j', 'template_gc4nyug', templateParams)
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+            console.log('FAILED...', error);
+            });
+} 
+
+
+//"Mail on PDC Site: " + nameOfSender,
+//"Name: " + nameOfSender/n + "Email/Phone: " + addressOfSender/n + "Message: " + messageOfSender, 

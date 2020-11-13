@@ -45,6 +45,7 @@ function sendEmail() {
     emailjs.send('service_1nzml0j', 'template_gc4nyug', templateParams)
             .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
+            alert("Message Sent");
             }, function(error) {
             console.log('FAILED...', error);
             });

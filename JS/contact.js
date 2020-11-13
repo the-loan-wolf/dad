@@ -30,14 +30,10 @@ L.marker([25.6082129, 85.1566429]).addTo(map)
     emailjs.init("user_Zlj4X0CYY9s8R3IoUHwAD");
  })();
 
- let nameOfSender = document.querySelector('#name').value;
- let addressOfSender = document.querySelector('#email').value;
- let messageOfSender = document.getElementsByTagName('#message').value;
- 
 function sendEmail() { 
     let nameOfSender = document.querySelector('#name').value;
     let addressOfSender = document.querySelector('#email').value;
-    let messageOfSender = document.getElementsByTagName('#message').value;
+    let messageOfSender = document.querySelector('#message').value;
 
     var templateParams = {
         from_name: nameOfSender,
@@ -53,7 +49,3 @@ function sendEmail() {
             console.log('FAILED...', error);
             });
 } 
-
-
-//"Mail on PDC Site: " + nameOfSender,
-//"Name: " + nameOfSender/n + "Email/Phone: " + addressOfSender/n + "Message: " + messageOfSender, 

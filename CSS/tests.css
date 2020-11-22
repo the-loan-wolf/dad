@@ -1,0 +1,32 @@
+sup {font-size:xx-small; vertical-align:super;}
+
+sub {font-size:xx-small; vertical-align:sub;}
+
+#header {
+    width: 50%;
+    font-size: 2rem;
+    position: relative;
+    top: 2rem;
+    left: 3%;
+}
+
+table {
+    position: relative;
+    top: 4rem;
+    margin: auto;
+    width: 50%;
+    border: 2px solid #7085F5;
+}
+tr:nth-child(even) {
+    background-color: #BCBCBC;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-size: 1.3rem;
+}

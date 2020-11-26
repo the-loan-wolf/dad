@@ -10,6 +10,45 @@ sub {font-size:xx-small; vertical-align:sub;}
     left: 3%;
 }
 
+.test-search-field {
+    position: relative;
+    text-align: center;
+    top: 3rem;
+}
+
+#test-name {
+    outline: none;
+    background-color: #7085F5;
+    border-style: none;
+}
+
+.test-name:focus {
+    /* outline: none; */
+}
+
+::placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+}
+
+#test-search-btn {
+    cursor: pointer;
+    color: #EFEFEF !important;
+    background-color: #7085F5;
+    border-style: none;
+    outline: none;
+}
+
+#test-search-btn:hover {
+    background-color: #BCBCBC;
+}
+
+#test-search-btn, #test-name {
+    padding: 8px;
+    color: #2C2C2C;
+    border-radius: 0.2rem;
+}
+
 table {
     position: relative;
     top: 4rem;

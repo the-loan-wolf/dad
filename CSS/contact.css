@@ -83,6 +83,7 @@ label {
     width: 50%;
     height: 2rem;
     margin-top: 2%;
+    cursor: pointer;
 }
 
 #name::placeholder, #email::placeholder {

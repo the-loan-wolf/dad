@@ -42,5 +42,15 @@ let tests = {
     Chloride: ["chloride"],
     "KFT/RFT": ["kft/rft","kft","rft"],
     LFT: ["lft"],
+    Amylase: ["amylase"],
+    Lipase: ["lipase"],
+    Calcium: ["calcium"],
+    Calcitonin: ["calcitonin"],
+    IonizedCalcium: ["ionized calcium"],
+    "25OHVitamin-D": ["25 oh vitamin-d"],
+    VitaminB12: ["vitamin b12"],
+    VitaminB1: ["vitamin b1"],
+    VitaminB6: ["vitamin b6"],
+    VitaminC: ["vitamin c"],
     
 }

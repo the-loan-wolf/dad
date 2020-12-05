@@ -1,17 +1,9 @@
 let inputText;
 let testSearchBtn = document.querySelector("#test-search-btn");
 
-testSearchBtn.addEventListener("click", searchFunction);
-
-function searchFunction() {
-    inputText = document.querySelector("#test-name").value.toLowerCase();
-    console.log(inputText);
-}
-
 // all tests keyword stored here as an object for search
 
 let tests = {
-
     "HS%": ["hs%"],
     TC: ["tc"],
     DC: ["dc"],
@@ -19,7 +11,7 @@ let tests = {
     CBC: ["cbc"],
     ESR: ["esr"],
     ReticulocyteCount: ["reticulocyte count"],
-    ABO: ["abo blood group rh type","abo","rh"],
+    ABO: ["abo blood group rh type","abo","rh", "blood group","blood"],
     BTCT: ["bt ct","bt"],
     Eosinophils: ["eosinophils", "eosinophils absolute count"],
     BloodSugarRandom: ["blood sugar random","sugar","blood sugar"],
@@ -47,14 +39,14 @@ let tests = {
     Calcium: ["calcium"],
     Calcitonin: ["calcitonin"],
     IonizedCalcium: ["ionized calcium"],
-    "25OHVitamin-D": ["25 oh vitamin-d"],
-    VitaminB12: ["vitamin b12"],
-    VitaminB1: ["vitamin b1"],
-    VitaminB6: ["vitamin b6"],
-    VitaminC: ["vitamin c"],
-    VitaminE: ["vitamin e"],
-    VitaminK: ["vitamin k"],
-    VitaminA: ["vitamin a"],
+    "25OHVitamin-D": ["25 oh vitamin-d","vitamin"],
+    VitaminB12: ["vitamin b12","vitamin"],
+    VitaminB1: ["vitamin b1","vitamin"],
+    VitaminB6: ["vitamin b6","vitamin"],
+    VitaminC: ["vitamin c","vitamin"],
+    VitaminE: ["vitamin e","vitamin"],
+    VitaminK: ["vitamin k","vitamin"],
+    VitaminA: ["vitamin a","vitamin"],
     "ProthrombinTime(PT)": ["prothrombin time(pt)"],
     APTT: ["aptt"],
     LIPIDProfile: ["lipid profile"],
@@ -111,4 +103,27 @@ let tests = {
     "Anti-CCP": ["anti-ccp"],
     Electrolyte: ["electrolyte"],
     TBGold: ["tb gold"]
+};
+
+// adding event listner to our search button
+
+testSearchBtn.addEventListener("click", searchFunction);
+
+// search function
+function searchFunction() {
+    inputText = document.querySelector("#test-name").value.toLowerCase();
+    for (let a = 0; a < document.getElementsByTagName("tr").length; a++) {
+        document.getElementsByTagName("tr")[a].style.display = "none";
+    }
+
+    document.getElementsByTagName("tr")[0].style.display = "";
+    for (let i = 0; i < Object.values(tests).length; i++) {
+        for (let j = 0; j < Object.values(tests)[i].length; j++) {
+            if (inputText == Object.values(tests)[i][j]) {
+                let c = i + 1;
+                document.getElementsByTagName("tr")[c].style.display = "";
+            }
+        }
+        
+    }
 };
